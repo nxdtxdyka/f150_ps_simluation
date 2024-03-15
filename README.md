@@ -8,4 +8,4 @@ Specific installation steps can be referred to in the original T-RECS code. The 
 ](https://github.com/abonaldi/TRECS/tree/master)
 
 ### Model input files
-Model input files, such as the updated luminosity function, can be downloaded from this link: [https://www.dropbox.com/scl/fi/yhdcfxyfzsyn3ecf3y6cd/TRECS_Inputs.zip?rlkey=kiz2h7xo9poqpzso86hj4e284&dl=0](https://www.dropbox.com/scl/fi/i08xe9mziqfjeclipeje9/TRECS_Inputs.7z?rlkey=hhstrpjvzlnuz4psjgzew9c47&dl=0)https://www.dropbox.com/scl/fi/i08xe9mziqfjeclipeje9/TRECS_Inputs.7z?rlkey=hhstrpjvzlnuz4psjgzew9c47&dl=0
+Model input files, such as the updated luminosity function, can be downloaded from this link: https://www.dropbox.com/scl/fi/i08xe9mziqfjeclipeje9/TRECS_Inputs.7z?rlkey=hhstrpjvzlnuz4psjgzew9c47&dl=0
