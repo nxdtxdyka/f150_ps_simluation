@@ -369,7 +369,7 @@ program sampler
     call read_columns(freq_filename,2,nfreq,Ncolumns,nskip,data)
     Nfreq_out=Nfreq
     
-    !Modification Tags:1400¡ú150,4800¡ú480MHz
+    !Modification Tags:1400Â¡Ãº150,4800Â¡Ãº480MHz
     
     ! add to the frequency vector the frequencies: 
     ! 150 and 480 MHz and the frequency at which the flux cut is done, whether they are already 
@@ -1087,7 +1087,7 @@ program sampler
                 !Modification Tags:The size model for AGN, sourced from (Di Pompeo et al., 2013), where "narrow" corresponds to 
                 !the original data2(:,3) and "wide" corresponds to the original data2(:,4).
                 x2=data2(:,1) !size Kpc
-                px2=data2(:,size_para+2) !N(size) (different model for flat and steep-spectrum)£¡narrow  
+                px2=data2(:,size_para+2) !N(size) (different model for flat and steep-spectrum)Â£Â¡narrow  
                 ! in different columns of the file
 
                 dx2=abs(x2(2)-x2(1))
@@ -2102,7 +2102,7 @@ program sampler
                 catout(2,jstart:jstart+Nsample-1)=samplex(1:Nsample) !Lum1400
                 catout(3,jstart:jstart+Nsample-1)=logsfr(1:Nsample)        !logSFR
                 catout(4:nfreq_out+3,jstart:jstart+Nsample-1)=radioflux(4:Nfreq,:)  ! total intensity
-                catout(2*nfreq_out+4:2*nfreq_out+3,jstart:jstart+Nsample-1)=polaflux(4:Nfreq,:)  !polarization
+                catout(nfreq_out+4:2*nfreq_out+3,jstart:jstart+Nsample-1)=polaflux(4:Nfreq,:)  !polarization
                 catout(2*nfreq_out+4,jstart:jstart+Nsample-1)=darkmass      ! dark mass
                 catout(2*nfreq_out+5,jstart:jstart+Nsample-1)=mstar      ! stellar mass
                 catout(2*nfreq_out+6,jstart:jstart+Nsample-1)=himass      ! HI mass
