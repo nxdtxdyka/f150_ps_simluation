@@ -1645,7 +1645,7 @@ program sampler
                                 do i=1,Nsample
                                 
                                     alpha=random_gaussian(-0.6027246833333333,0.03716357318694417)
-                                    if (alpha >100) alpha=random_gaussian(-0.7017541082677166, 0.04209721790047449)
+                                    if (alpha >100) alpha=random_gaussian(-0.6027246833333333,0.03716357318694417)
                                     alphas_slice(i) = alpha
                                     zgals_slice(i)=zlow_lum + (zhigh_lum-zlow_lum)*rand()
                                     z_copy = zgals_slice(i)
@@ -1723,7 +1723,7 @@ program sampler
                                 do i=1,Nsample
                                 
                                     alpha=random_gaussian(-0.6027246833333333,0.03716357318694417)
-                                    if (alpha >100) alpha=random_gaussian(-0.7017541082677166, 0.04209721790047449)
+                                    if (alpha >100) alpha=random_gaussian(-0.6027246833333333,0.03716357318694417)
                                     alphas_slice(i) = alpha
                                     zgals_slice(i)=zlow_lum + (zhigh_lum-zlow_lum)*rand()
                                     z_copy = zgals_slice(i)
