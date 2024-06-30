@@ -1325,7 +1325,7 @@ program sampler
                     !Modification Tags:After computing the luminosity-SFR correlation for different flux intervals 
                     !of LERG and HERG based on Formula 2 from Best et al. (2023), assign SFR values accordingly.
                     !RandomExponential() in random_modules.f90
-                    logsfr(i) = (samplex(i)-0.7-RandomExponential(0.5373_8)-29.4)/1.08
+                    logsfr(i) = (samplex(i)-0.7-RandomExponential(0.5373_8)-22.94)/1.08
                     
                     dim=sizes_3d(i)*sin_i/1000. ! size in Mpc corrected for view angle. 
                     sizes(i)=theta_p(dim,z_i)
@@ -1617,7 +1617,7 @@ program sampler
                                         &*1.e26*(1+z_copy)**(1 + alpha) !no scatter
                                     
                                     !Modification Tags: flux_random_generator_sfg() in random_modules.f90
-                                    logsfr_slice(i) = (samplex_slice(i) - 29.4)/1.08 + &
+                                    logsfr_slice(i) = (samplex_slice(i) - 22.24)/1.08 + &
                                         &flux_random_generator_sfg(flux15/1000.)
                                     
                                    
@@ -1655,7 +1655,7 @@ program sampler
                                     flux15=(10.**samplex_slice(i))/(4.*pi*(lumr(z_copy)*Mpc)**2)&
                                         &*1.e26*(1+z_copy)**(1 + alpha) !no scatter
                                 
-                                    logsfr_slice(i) = (samplex_slice(i) - 29.4)/1.08 + &
+                                    logsfr_slice(i) = (samplex_slice(i) - 22.24)/1.08 + &
                                         &flux_random_generator_sfg(flux15/1000.)
                                     
                                     Radioflux_slice(:,i)=flux15*(frequencies/150.)**alpha
@@ -1696,7 +1696,7 @@ program sampler
                                     flux15=(10.**samplex_slice(i))/(4.*pi*(lumr(z_copy)*Mpc)**2)&
                                         &*1.e26*(1+z_copy)**(1 + alpha) !no scatter
 
-                                    logsfr_slice(i) = (samplex_slice(i) - 29.4)/1.08 + &
+                                    logsfr_slice(i) = (samplex_slice(i) - 22.24)/1.08 + &
                                         &flux_random_generator_rqagn(flux15/1000.)
 
                                     
@@ -1734,7 +1734,7 @@ program sampler
                                     flux15=(10.**samplex_slice(i))/(4.*pi*(lumr(z_copy)*Mpc)**2)&
                                         &*1.e26*(1+z_copy)**(1 + alpha) !no scatter
                                 
-                                    logsfr_slice(i) = (samplex_slice(i) - 29.4)/1.08 + &
+                                    logsfr_slice(i) = (samplex_slice(i) - 22.24)/1.08 + &
                                         &flux_random_generator_rqagn(flux15/1000.)
 
 
